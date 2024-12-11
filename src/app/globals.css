@@ -71,3 +71,72 @@
 .active {
   background-color: #0d144f;
 }
+
+/* btn styles */
+.btn-primary {
+  background-color: #0d144f;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #0d144f;
+  transition: all 0.3s ease;
+}
+
+.btn-md {
+  padding: 0.5rem 1rem;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #0d144f;
+  border: 2px solid #0d144f;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-outline:hover {
+  background-color: #0d144f;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-mobile {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-mobile:hover {
+  background-color: #fff;
+  color: #0d144f;
+  transition: all 0.3s ease;
+}
+
+/* social styles */
+.social {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.social.facebook {
+  color: #1877f2;
+}
+.social.twitter {
+  color: #1da1f2;
+}
+.social.instagram {
+  color: #c13584;
+}
+
+.social:hover {
+  color: #0d144f;
+  transition: all 0.3s;
+}
