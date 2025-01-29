@@ -3,8 +3,14 @@ import DashboardChart from "@/components/DashboardChart";
 import DashboardTable from "@/components/DashboardTable";
 import { Skeleton } from "@/components/ui/skeleton";
 import { getDashboardData } from "@/lib/data";
+import { Metadata } from "next";
 import { unstable_noStore } from "next/cache";
 import { Suspense } from "react";
+
+export const metadata: Metadata = {
+  title: "The Stone King | Dashboard",
+  description: "Admin Dashboard",
+};
 
 export default async function Dashboard() {
   unstable_noStore();

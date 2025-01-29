@@ -1,7 +1,24 @@
 import Button from "@/components/Button";
 import ContactForm from "@/components/ContactForm";
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  metadataBase: new URL("https://thestonekingllc.com/"),
+  title: "The Stone King | About",
+  description:
+    "The Stone King offers expert kitchen and bathroom remodeling services across the Chicagoland area. Based in Elgin, IL, we provide custom designs, high-quality installations, and complete renovations to transform your space.",
+  openGraph: {
+    title: "The Stone King | About",
+    description:
+      "The Stone King offers expert kitchen and bathroom remodeling services across the Chicagoland area. Based in Elgin, IL, we provide custom designs, high-quality installations, and complete renovations to transform your space.",
+    type: "website",
+    locale: "en_us",
+    url: "https://thestonekingllc.com/about",
+    siteName: "The Stone King",
+  },
+};
 
 export default function About() {
   return (
