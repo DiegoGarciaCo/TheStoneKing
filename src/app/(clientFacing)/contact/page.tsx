@@ -21,30 +21,21 @@ export default function Contact() {
                 <i className="fas fa-phone-alt text-5xl"></i>
               </p>
               <h3 className="font-bold text-xl mt-4">Call or Text</h3>
-              <p>555-555-5555</p>
+              <p>847-275-9733</p>
             </div>
             <div className="col-span-1 text-start">
               <p>
                 <i className="fas fa-envelope text-5xl"></i>
               </p>
               <h3 className="font-bold text-xl mt-4">Email</h3>
-              <p>Randomemail@thestoneking.com</p>
-            </div>
-            <div className="col-span-1 text-start">
-              <p>
-                <i className="fas fa-map-marker-alt text-5xl"></i>
-              </p>
-              <h3 className="font-bold text-xl mt-4">Visit Us</h3>
-              <p className="text-sm">1234 Stone King Lane</p>
-              <p className="text-sm">Stoneville, ST 12345</p>
+              <p>bernap_306@thestonekingllc.com</p>
             </div>
             <div className="col-span-1 text-start">
               <p>
                 <i className="fas fa-clock text-5xl"></i>
               </p>
               <h3 className="font-bold text-xl mt-4">Hours of Operation</h3>
-              <p>Mon – Fri: 8 am – 6 pm</p>
-              <p className="text-sm">Sat: 10 am – 4 pm</p>
+              <p>Mon – Sat: 8 am – 6 pm</p>
               <p className="text-sm">Sun: Closed</p>
             </div>
           </div>

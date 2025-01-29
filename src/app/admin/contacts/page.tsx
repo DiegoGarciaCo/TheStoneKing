@@ -1,18 +1,15 @@
-// import { auth } from "@/auth";
 import ContactsTable from "@/components/ContactsTable";
-import { redirect } from "next/navigation";
 import { Suspense } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
+import { unstable_noStore } from "next/cache";
 
 export default async function Contacts() {
-  //   const session = await auth();
-  //   if (!session) {
-  //     return redirect("/api/auth/signin?callbackUrl=/admin/contacts");
-  //   }
+  unstable_noStore();
   return (
     <section className="p-5">
       <h1 className="text-2xl font-bold text-center">Contacts</h1>
       <div>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Skeleton />}>
           <ContactsTable />
         </Suspense>
       </div>

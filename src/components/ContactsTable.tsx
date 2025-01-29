@@ -12,9 +12,20 @@ import CheckBox from "@/components/Checkbox";
 import { formatPhoneNumber } from "@/lib/utils";
 import { updateTable } from "@/lib/actions";
 
+interface Contact {
+  name: string;
+  email: string;
+  phone: string;
+  id: string;
+  hide: boolean;
+  delete: boolean;
+  message: string;
+  createdAt: Date;
+}
+
 export default async function ContactsTable() {
   // Fetch all contacts
-  const data = await getContacts();
+  const data: Contact[] = await getContacts();
 
   return (
     <section className="min-h-screen">

@@ -11,9 +11,16 @@ import { getSubscriptions } from "@/lib/data";
 import CheckBox from "./Checkbox";
 import { updateNewsletterTable } from "@/lib/actions";
 
+interface Data {
+  id: string;
+  email: string;
+  delete: boolean;
+  createdAt: Date;
+}
+
 export default async function SubscriptionsTable() {
   // Fetch all contacts
-  const data = await getSubscriptions();
+  const data: Data[] = await getSubscriptions();
 
   return (
     <section className="min-h-screen">

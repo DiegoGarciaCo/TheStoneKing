@@ -12,9 +12,20 @@ import CheckBox from "@/components/Checkbox";
 import { formatPhoneNumber } from "@/lib/utils";
 import { hideContact } from "@/lib/actions";
 
+interface Data {
+  id: string;
+  name: string;
+  email: string;
+  phone: string;
+  hide: boolean;
+  delete: boolean;
+  message: string;
+  createdAt: Date;
+}
+
 export default async function DashboardTable() {
   // Fetch the 7 latest contacts
-  const data = await getLatestContacts();
+  const data: Data[] = await getLatestContacts();
 
   return (
     <Table className="overflow-hidden">

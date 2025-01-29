@@ -1,20 +1,13 @@
-// import { auth } from "@/auth";
 import DashboardCard from "@/components/DashboardCard";
 import DashboardChart from "@/components/DashboardChart";
 import DashboardTable from "@/components/DashboardTable";
 import { Skeleton } from "@/components/ui/skeleton";
 import { getDashboardData } from "@/lib/data";
-// import { redirect } from "next/navigation";
+import { unstable_noStore } from "next/cache";
 import { Suspense } from "react";
 
 export default async function Dashboard() {
-  // Redirect to the login page if the user is not authenticated
-  //   const session = await auth();
-  //   if (!session) {
-  //     return redirect("/api/auth/signin?callbackUrl=/admin");
-  //   }
-
-  // Fetch the dashboard data
+  unstable_noStore();
   const data = await getDashboardData();
 
   return (

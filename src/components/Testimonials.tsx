@@ -9,6 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Image from "next/image";
 
 export function Testimonials() {
   const plugin = React.useRef(
@@ -70,9 +71,11 @@ export function Testimonials() {
             <div className="p-1 flex flex-col justify-center items-center">
               <p className="text-center py-8 md:px-80">{testimonial.review}</p>
               <div className="flex items-center justify-center py-2">
-                <img
+                <Image
                   src={testimonial.image}
                   alt={testimonial.name}
+                  width={16}
+                  height={9}
                   className="rounded-full h-20 w-20"
                 />
                 <div className="md:p-8 p-3">

@@ -16,7 +16,7 @@ export default function Footer() {
           <h3 className="text-2xl font-bold">Contact Us</h3>
           <div className="flex gap-3">
             <a
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/eandbstonedesign"
               target="_blank"
               rel="noopener noreferrer"
               className="social facebook"
@@ -32,7 +32,7 @@ export default function Footer() {
               <i className="fab fa-twitter"></i>
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/the_stonekingllc/"
               target="_blank"
               rel="noopener noreferrer"
               className="social instagram"
@@ -40,14 +40,14 @@ export default function Footer() {
               <i className="fab fa-instagram"></i>
             </a>
           </div>
-          <p className="text-sm">1234 Stone King Lane</p>
-          <p className="text-sm">Stoneville, ST 12345</p>
-          <p className="text-sm flex items-center">Phone: 555-555-5555</p>
+          {/* <p className="text-sm">1234 Stone King Lane</p>
+          <p className="text-sm">Stoneville, ST 12345</p> */}
+          <p className="text-sm flex items-center">Phone: 847-275-9733</p>
+          <p>Email: bernap_306@thestonekingllc.com</p>
         </div>
         <div className="flex flex-col gap-4 md:w-1/3">
           <h3 className="text-2xl font-bold">Hours of Operation</h3>
-          <p className="text-sm">Mon – Fri: 8 am – 6 pm</p>
-          <p className="text-sm">Sat: 10 am – 4 pm</p>
+          <p className="text-sm">Mon – Sat: 8 am – 6 pm</p>
           <p className="text-sm">Sun: Closed</p>
         </div>
       </div>
